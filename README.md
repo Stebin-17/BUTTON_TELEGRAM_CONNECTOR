@@ -1,6 +1,6 @@
-# BUTTON_TELEGRAM_CONNECTOR
+<h1 align="center">BUTTON_TELEGRAM_CONNECTOR</h1>
 
-**To establish a bi-directional connection between the IoT device and client app.**
+**To establish a bi-directional connection between the IoT device and client app**
  
 ## INTRODUCTION:
 
@@ -46,6 +46,16 @@ The flow of the project is mentioned below:
 ## WORKING:
 
 The flow of the project starts with the user pressing the button. The button is programmed in the WIZNET-EVB-PICO 5100 ethernet board in such a way that it will publish a message "Emergency you have to exit" to the MQTT service. This project uses an online MQTT broker with a host and port number. The C program running in the Arduino IDE will send this message and wait for the message received from the client. The MQTT server is subscribed to a "home/telegram" topic. A python program running in the background in such a way that it will receive the MQTT message, and through the obtained API given, it will send a post request, and the message will be posted in the telegram bot. The program will ideally wait to receive the response from the user. Whenever the user sends a message in the bot, the response from the JSON object returned will be fetched by the telegram, and the reply text will be published to the MQTT server under the topic name "home/tel-reply." The C program will receive this message, and the response from the user will be displayed in the dot matrix attached. 
+
+## Telegram-API
+
+- Open Telegram and search for the "BotFather" user.
+- Start a conversation with "BotFather" and type "/newbot".
+- Follow the prompts to give your bot a name and username.
+- Once you've created your bot, "BotFather" will send you a message containing your bot's token. The token is a long string of characters that uniquely identifies your bot and is required to authenticate API requests.
+- Save your bot's token in a secure place, as you will need to use it to interact with the Telegram Bot API.
+
+For more information click the [link](https://core.telegram.org/api/obtaining_api_id).
 
 ## OUTPUT:
 
