@@ -37,7 +37,11 @@ The initial days of the project were used to understand the working of the MQTT 
 
 ## FLOW CHART OF THE PROJECT:
 
-![image](https://user-images.githubusercontent.com/114398468/220898884-dc1a2bce-a487-47a5-b821-2cdb071e53fd.png)
+The flow of the project is mentioned below:
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/114398468/220898884-dc1a2bce-a487-47a5-b821-2cdb071e53fd.png" />
+</p>
 
 ## WORKING:
 
