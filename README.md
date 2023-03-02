@@ -1,6 +1,6 @@
 <h1 align="center">BUTTON_TELEGRAM_CONNECTOR</h1>
 
-**To establish a bi-directional connection between the IoT device and client app**
+**To establish a bi-directional connection between the IoT device and client app (Telegram)**
  
 ## INTRODUCTION:
 <p style='text-align: justify;'> Create an IoT setup to send messages to the end client upon triggering. As mentioned earlier, the triggering activity will be a button similar to a doorbell. From the end client, the user should be able to send his response back to the IoT device, which will display the message in an 8*8 dot matrix led panel. The time for reconnecting and sending messages should be ideal. The end client chosen was a telegram bot.
